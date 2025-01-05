@@ -3,6 +3,7 @@ import { Appbar } from "./Appbar"
 import { Avatar } from "./BlogCard"
 
 export const FullBlog = ({ blog }: {blog: Blog}) => {
+    
     return <div>
         <Appbar />
         <div className="flex justify-center">
@@ -14,8 +15,8 @@ export const FullBlog = ({ blog }: {blog: Blog}) => {
                     <div className="text-slate-500 pt-2">
                         Post on 2nd December 2023
                     </div>
-                    <div className="pt-4">
-                        {blog.content}
+                    <div className="pt-6 text-lg leading-relaxed text-slate-700">
+                       <p>{blog.content}</p> 
                     </div>
                 </div>
                 <div className="col-span-4">
